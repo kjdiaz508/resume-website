@@ -1,0 +1,112 @@
+:root {
+    --background-dark: #141428;
+    --background-light: #e0e0e0;
+    --text-dark: #e0e0e0;
+    --text-light: #141428;
+    --primary-color: #6a0dad;
+    --secondary-color: #3b0b78;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(135deg, #141428 0%, #2c2c54 100%);
+    color: var(--text-dark);
+    margin: 0;
+    padding: 0;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+header {
+    background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+    padding: 20px;
+    text-align: left;
+}
+
+.header-container h1 {
+    margin: 0;
+    font-size: 2.5em;
+}
+
+.header-container p {
+    margin: 5px 0;
+    font-style: italic;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 10px 0 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 10px;
+}
+
+nav ul li a, nav ul li button {
+    text-decoration: none;
+    color: var(--text-dark);
+    font-weight: bold;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+section {
+    padding: 50px 20px;
+    text-align: left;
+    border-radius: 10px;
+    margin: 20px auto;
+    width: 80%;
+    background: var(--background-light);
+    box-shadow: 0px 0px 15px 5px rgba(106, 13, 173, 0.4);
+    transition: background 0.3s, color 0.3s, box-shadow 0.3s;
+}
+
+section h2 {
+    margin-top: 0;
+}
+
+.skills-list {
+    list-style: none;
+    padding: 0;
+}
+
+.skills-list li {
+    padding: 10px;
+}
+
+.project-item {
+    background: var(--background-dark);
+    padding: 20px;
+    margin: 20px 0;
+    border-radius: 10px;
+    color: var(--text-light);
+    box-shadow: 0px 0px 10px 3px rgba(59, 11, 120, 0.4);
+    transition: background 0.3s, color 0.3s, box-shadow 0.3s;
+}
+
+.project-item a {
+    color: var(--primary-color);
+    text-decoration: none;
+    font-weight: bold;
+}
+
+footer {
+    background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+    padding: 20px;
+    text-align: left;
+    color: var(--text-dark);
+}
+
+footer a {
+    color: var(--text-dark);
+    text-decoration: none;
+}
+
+.light-mode {
+    --background-dark: #e0e0e0;
+    --background-light: #141428;
+    --text-dark: #e0e0e0;
+    --text-light: #141428;
+}
