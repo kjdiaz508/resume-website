@@ -29,6 +29,12 @@ header {
     text-align: left;
 }
 
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
 .header-container h1 {
     margin: 0;
     font-size: 2.5em;
@@ -44,8 +50,6 @@ header {
     justify-content: space-around;
     align-items: center;
     list-style: none;
-    padding: 0;
-    margin: 20px 0 0;
 }
 
 nav ul li {
