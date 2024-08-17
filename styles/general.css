@@ -2,10 +2,12 @@
     /* by default it will be in dark mode */
     --background-color: #141428;
     --text-color: #e0e0e0;
-    --text-light: #141428;
+    --light-color: #e0e0e0;
+    --dark-color: #141428;
     --primary-color: #6a0dad;
     --secondary-color: #3b0b78;
-    --transition-speed: 0.3s
+    --transition-speed: 0.3s;
+    font-size: 18px;
 }
 
 .light-mode {
@@ -14,7 +16,7 @@
 }
 body {
     font-family: 'Arial', sans-serif;
-    background: linear-gradient(135deg, #141428 0%, #2c2c54 100%);
+    background: linear-gradient(#141428 4%, #2c2c54, #141428 94%);
     color: var(--text-color);
     margin: 0;
     padding: 0;
@@ -22,7 +24,7 @@ body {
 }
 
 header {
-    background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+    /*background: var(--secondary-color);*/
     padding: 20px;
     text-align: left;
 }
@@ -33,14 +35,17 @@ header {
 }
 
 .header-container p {
-    margin: 5px 0;
+    margin: 10px 0;
     font-style: italic;
 }
 
-nav ul {
+.link-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
     list-style: none;
     padding: 0;
-    margin: 10px 0 0;
+    margin: 20px 0 0;
 }
 
 nav ul li {
@@ -48,9 +53,14 @@ nav ul li {
     margin: 0 10px;
 }
 
+button {
+    font-family: Arial, sans-serif;
+}
+
 nav ul li a, nav ul li button {
     text-decoration: none;
     color: var(--text-color);
+    font-size: 1.2rem;
     font-weight: bold;
     background: none;
     border: none;
@@ -99,7 +109,7 @@ section h2 {
 }
 
 footer {
-    background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+    /*background: var(--dark-color);*/
     padding: 20px;
     text-align: left;
     color: var(--text-dark);
