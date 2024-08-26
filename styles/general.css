@@ -3,10 +3,6 @@
 
 /* styles for development purposes */
 
-div, section, header, main {
-  outline: solid yellow 1px;
-}
-
 :root {
   --dark-color: #141428;
   --dark-color-brighter: #1b1b38;
@@ -41,6 +37,7 @@ html {
 }
 
 body {
+  flex-direction: column;
   min-height: 100%;
   background-color: #141428;
   color: var(--light-color-darker);
@@ -143,7 +140,7 @@ section {
 .container {
   position: relative;
   bottom: 0;
-  max-width: 1536px;
+  max-width: 1280px;
   margin-left: auto;
   margin-right: auto;
   padding-left: 0.5rem;
@@ -151,12 +148,13 @@ section {
   z-index: 10;
 }
 
-/* 2xl */
+/* 
 @media (max-width: 1536px) {
   .container {
     max-width: 1280px;
   }
 }
+*/
 
 /* xl */
 @media (max-width: 1280px) {
