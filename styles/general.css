@@ -1,6 +1,15 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,100..900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Titillium+Web:wght@400;600&display=swap");
 
+/* styles for development purposes */
+
+div, section, header, main {
+  outline: solid yellow 1px;
+}
+
+
+
+
 :root {
   --dark-color: #141428;
   --dark-color-brighter: #191933;
@@ -41,7 +50,7 @@ body {
 }
 
 .grid-container {
-  position: absolute;
+  position: fixed;
   top: auto;
   bottom: 0;
   left: 0;
@@ -54,7 +63,7 @@ body {
 }
 
 .grid-lines {
-  position: absolute;
+  position: fixed;
   top: 0;
   bottom: 0;
   left: 0;
