@@ -58,23 +58,4 @@ section {
     box-shadow: var(--glow-color) 0px 0px 6px;
 }
 
-/*
-need this because I want to center the main content
-to the screen, not to the space below the header
-*/
-.centering-is-hard {
-    display: flex;
-    align-items: center;
 
-    /* making space so the header is not covered.
-    font size * line-height + padding
-    TODO: find a better way..? or make these vars */
-    padding-top: calc(2em * 1.5 + 40px);
-    padding-bottom: calc(2em * 1.5 + 40px);
-    position: absolute;
-    right: 0;
-    left: 0;
-    top: 0;
-    min-height: 100%;
-    bottom: auto;
-}
