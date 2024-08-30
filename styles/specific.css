@@ -20,7 +20,8 @@ to the screen, not to the space below the header
 }
 
 .logo {
-    font-family: "Titillium Web", sans-serif;
+    color: var(--light-color);
+    font-family: "Titillium Web", system-ui, sans-serif;
     font-weight: 600;
     /* need this set for the padding calculation
     on the main content, just to be sure*/
@@ -31,14 +32,23 @@ to the screen, not to the space below the header
 .section-heading {
     font-size: 2rem;
     color: var(--light-color);
+    margin-top: 5px;
+    margin-bottom: 5px;
 }
 
 .subheading {
+    font-weight: 600;
     font-size: 1.5rem;
+    margin-bottom: 5px;
 }
 
 .text {
     font-size: 1.125rem;
+    line-height: 1.5;
+}
+
+.bold {
+    font-size: 600;
 }
 
 #bio {
@@ -63,8 +73,23 @@ to the screen, not to the space below the header
 }
 
 .contact-icon-container {
+    flex-grow: 1;
     display: flex;
+    justify-content: space-around;
     flex-direction: column;
     align-items: center;
 }
 
+.contact-icon:hover {
+    filter: drop-shadow(0 0 10px var(--glow-color));
+}
+
+#email-icon {
+    fill: #000;
+    stroke: #fff;
+}
+
+#github-icon {
+    /*fill: #24292f*/
+    fill: var(--light-color-darker);
+}

@@ -5,20 +5,30 @@
     --dark-color: #141428;
     --dark-color-brighter: #1b1b38;
     --light-color: #e0e0e0;
-    --light-color-darker: #bebebe;
+    --light-color-darker: #b3b3b3;
     /*--accent-color: #3b0b78;*/
     --accent-color: #9d14ff;
     --glow-color: #6a0dad;
     --low-contrast: #e0e0e0;
 }
 
-* {
+*, *::before, *::after {
     box-sizing: border-box;
     margin: 0;
 }
 
+img, picture, svg, video {
+    display: block;
+    max-width: 100%;
+}
+
+input, textarea, button, select {
+    font: inherit
+}
+
 html {
     height: 100%;
+    color-scheme: dark;
 }
 
 header {
@@ -30,9 +40,11 @@ header {
 }
 
 body {
+    font-family: Inter, system-ui, sans-serif;
     min-height: 100%;
     background-color: #141428;
     color: var(--light-color-darker);
+    margin: 0;
 }
 
 main {
