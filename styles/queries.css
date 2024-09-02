@@ -32,6 +32,7 @@
     }
   }
   
+  /* going for single column on smaller screens */
   /* md */
   @media (max-width: 768px) {
     .container {

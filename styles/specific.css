@@ -52,24 +52,24 @@ to the screen, not to the space below the header
 }
 
 #bio {
-    grid-column: span 6;
+    grid-area: bio;
 }
 
 #experience {
     justify-content: space-around;
-    grid-column: span 5;
+    grid-area: exp;
 }
 
 #skills {
-    grid-column: span 4;
+    grid-area: skills;
 }
 
 #education {
-    grid-column: span 2;
+    grid-area: edu;
 }
 
 #contact {
-    grid-column: span 1;
+    grid-area: contact;
 }
 
 .contact-icon-container {

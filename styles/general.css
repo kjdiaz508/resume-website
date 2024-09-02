@@ -52,6 +52,10 @@ main {
     display: grid;
     grid-template-columns: repeat(5, 2fr) 1fr;
     gap: 16px;
+    grid-template-areas: 
+        "bio bio bio bio bio bio"
+        "exp exp exp exp exp contact"
+        "skills skills skills skills edu edu";
 }
 
 section {
