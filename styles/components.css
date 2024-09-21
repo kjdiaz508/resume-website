@@ -72,6 +72,10 @@ to the screen, not to the space below the header
     grid-area: contact;
 }
 
+#projects {
+    grid-area: prj;
+}
+
 .contact-icon-container {
     flex-grow: 1;
     display: flex;
